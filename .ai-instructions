@@ -1,0 +1,85 @@
+
+# AI Development Instructions
+
+## Project Configuration
+code_style: airbnb
+typescript_strict: progressive
+preferred_patterns:
+  - functional_programming
+  - atomic_design
+  - memoization
+  - type_safety
+  - accessibility_first
+
+avoid_patterns:
+  - global_variables
+  - hardcoded_values
+  - large_files
+  - inline_styles
+  - mutation
+
+## Context Files (Read These First)
+- PROJECT_CONTEXT.md
+- GLOSSARY.md
+- AI_CHEATSHEET.md
+- src/design-system/index.ts
+
+## Component Creation Rules
+1. Maximum 300 lines per file
+2. Single responsibility principle
+3. React.memo for performance
+4. Comprehensive TypeScript types
+5. JSDoc documentation with examples
+6. Accessibility attributes (ARIA)
+7. Error boundaries where appropriate
+8. Responsive design (mobile-first)
+
+## Design System Usage
+- Always use design tokens, never hardcode
+- Follow atomic design principles
+- Use semantic color references
+- Implement proper animation patterns
+- Respect reduced motion preferences
+
+## Performance Requirements
+- Memoize expensive computations
+- Use React.memo for components
+- Implement lazy loading for routes
+- Optimize bundle size with tree shaking
+- Monitor render performance
+
+## Testing Strategy
+- Unit tests for all components
+- Integration tests for complex flows
+- Accessibility tests with screen readers
+- Performance tests for critical paths
+- Visual regression tests
+
+## Documentation Standards
+- File headers with purpose and context
+- JSDoc for all public functions
+- Inline comments for complex logic
+- README files for each directory
+- Decision documentation for architecture choices
+
+## Security Guidelines
+- Validate all inputs with Zod schemas
+- Sanitize user-generated content
+- Implement proper error handling
+- Use type-safe API calls
+- Follow OWASP guidelines
+
+## AI-Specific Guidelines
+- Add @ai-context markers for complex logic
+- Document decision reasoning
+- Include cross-references to related files
+- Use semantic naming conventions
+- Provide examples in documentation
+
+## Quality Gates
+- TypeScript compilation with no errors
+- All tests passing
+- Accessibility audit passing
+- Performance budget met
+- Bundle size within limits
+- Code coverage above 80%
